@@ -1,0 +1,591 @@
+/* Import the Google Font 'Lato' */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+/*!* Container styles *!*/
+#skill {
+  text-align: center;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px;
+}
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+  box-sizing: initial;
+}
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+}
+.chart figcaption {
+  color: transparent;
+}
+/* END Container styles */
+/* Tooltip styles */
+.chart .tooltiptext,
+.tool .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -27%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+.tool .tooltiptext {
+    bottom: -50%;
+}
+.chart .tooltiptext::after,
+.tool .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  /* Arrow at the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.chart:hover .tooltiptext,
+.tool:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* END Tooltip styles */
+/* Colors for the circles and positions for the graphics */
+.html {
+  top: 50px;
+  left: 45px;
+}
+.html + svg .outer {
+  stroke: #e34f26;
+}
+.css {
+  top: 55px;
+  left: 48px;
+}
+.css + svg .outer {
+  stroke: #0d84ce;
+}
+.java {
+  top: 43px;
+  left: 56px;
+}
+.java + svg .outer {
+  stroke: #df5908;
+}
+.php {
+  top: 68px;
+  left: 46px;
+}
+.php + svg .outer {
+  stroke: #8993be;
+}
+.laravel {
+  top: 64px;
+  left: 45px;
+}
+.laravel + svg .outer {
+  stroke: #f5362d;
+}
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+.javascript + svg .outer {
+  stroke: #f0e040;
+}
+.swift {
+  top: 45px;
+  left: 45px;
+}
+.swift + svg .outer {
+  stroke: #fb6c3c;
+}
+.android {
+  top: 45px;
+  left: 45px;
+}
+.android + svg .outer {
+  stroke: #84b74d;
+}
+.angular {
+  top: 45px;
+  left: 45px;
+}
+.angular + svg .outer {
+  stroke: #de343c;
+}
+.ionic {
+  top: 45px;
+  left: 45px;
+}
+.ionic + svg .outer {
+  stroke: #508ced;
+}
+.react {
+  top: 45px;
+  left: 45px;
+}
+.react + svg .outer {
+  stroke: #53d1fa;
+}
+.nodejs {
+  top: 45px;
+  left: 45px;
+}
+.nodejs + svg .outer {
+  stroke: #85cb39;
+}
+.c-sharp {
+  top: 45px;
+  left: 45px;
+}
+.c-sharp + svg .outer {
+  stroke: #672578;
+}
+.magento {
+  width: 90px;
+  height: auto;
+  top: 45px;
+  left: 50px;
+}
+.magento + svg .outer {
+  stroke: #f1642c;
+}
+.wordpress {
+  top: 46px;
+  left: 47px;
+}
+.wordpress + svg .outer {
+  stroke: #00749a;
+}
+.pimcore {
+  top: 66px;
+  left: 45px;
+}
+.pimcore + svg .outer {
+  stroke: #6b32b5;
+}
+.drupal {
+  top: 42px;
+  left: 51px;
+}
+.drupal + svg .outer {
+  stroke: #0073ba;
+}
+.symfony {
+  width: 90px;
+  height: auto;
+  top: 45px;
+  left: 50px;
+}
+.symfony + svg .outer {
+  stroke: #1a171b;
+}
+.mysql {
+  top: 45px;
+  left: 50px;
+}
+.mysql + svg .outer {
+  stroke: #00546b;
+}
+.shopware {
+  top: 45px;
+  left: 46px;
+}
+.shopware + svg .outer {
+  stroke: #189eff;
+}
+.bash {
+  top: 45px;
+  left: 53px;
+}
+.bash + svg .outer {
+  stroke: #cba03a;
+}
+.nginx {
+  top: 45px;
+  left: 45px;
+}
+.nginx + svg .outer {
+  stroke: #019639;
+}
+.jsonata {
+    top: 45px;
+    left: 45px;
+}
+.jsonata + svg .outer {
+    stroke: #264E50;
+}
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+/* Set the initial values for the animation */
+.chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 3s;
+  animation: show100 3s;
+}
+.chart[data-percent='95'] .outer {
+  stroke-dashoffset: 27;
+  -webkit-animation: show95 3s;
+  animation: show95 3s;
+}
+.chart[data-percent='90'] .outer {
+  stroke-dashoffset: 53;
+  -webkit-animation: show90 3s;
+  animation: show90 3s;
+}
+.chart[data-percent='85'] .outer {
+  stroke-dashoffset: 81;
+  -webkit-animation: show85 3s;
+  animation: show85 3s;
+}
+.chart[data-percent='80'] .outer {
+  stroke-dashoffset: 107;
+  -webkit-animation: show80 3s;
+  animation: show80 3s;
+}
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 134;
+  -webkit-animation: show75 3s;
+  animation: show75 3s;
+}
+.chart[data-percent='70'] .outer {
+  stroke-dashoffset: 160;
+  -webkit-animation: show70 3s;
+  animation: show70 3s;
+}
+.chart[data-percent='65'] .outer {
+  stroke-dashoffset: 187;
+  -webkit-animation: show65 3s;
+  animation: show65 3s;
+}
+.chart[data-percent='60'] .outer {
+  stroke-dashoffset: 215;
+  -webkit-animation: show60 3s;
+  animation: show60 3s;
+}
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 3s;
+  animation: show50 3s;
+}
+.chart[data-percent='40'] .outer {
+  stroke-dashoffset: 322;
+  -webkit-animation: show40 3s;
+  animation: show40 3s;
+}
+.chart[data-percent='30'] .outer {
+  stroke-dashoffset: 377;
+  -webkit-animation: show30 3s;
+  animation: show30 3s;
+}
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 401;
+  -webkit-animation: show25 3s;
+  animation: show25 3s;
+}
+.chart[data-percent='15'] .outer {
+  stroke-dashoffset: 456;
+  -webkit-animation: show15 3s;
+  animation: show15 3s;
+}
+/* END set initial animation values */
+/* Keyframes for the initial animation */
+@-webkit-keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes show95 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 27;
+  }
+}
+@keyframes show95 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 27;
+  }
+}
+@-webkit-keyframes show90 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 53;
+  }
+}
+@keyframes show90 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 53;
+  }
+}
+@-webkit-keyframes show85 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 81;
+  }
+}
+@keyframes show85 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 81;
+  }
+}
+@-webkit-keyframes show80 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 107;
+  }
+}
+@keyframes show80 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 107;
+  }
+}
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+@-webkit-keyframes show70 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+@keyframes show70 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+@-webkit-keyframes show65 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 187;
+  }
+}
+@keyframes show65 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 187;
+  }
+}
+@-webkit-keyframes show60 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 215;
+  }
+}
+@keyframes show60 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 215;
+  }
+}
+@-webkit-keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+@-webkit-keyframes show40 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 322;
+  }
+}
+@keyframes show40 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 322;
+  }
+}
+@-webkit-keyframes show30 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 377;
+  }
+}
+@keyframes show30 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 377;
+  }
+}
+@-webkit-keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+@keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+@-webkit-keyframes show15 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 456;
+  }
+}
+@keyframes show15 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 456;
+  }
+}
+/* END Keyframes for the initial animation */
+footer .qr img {
+  margin-top: -20px;
+  height: 100px;
+}
+@media (max-width: 991px) {
+  footer .qr img {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 479px) {
+  footer .qr img {
+    margin-top: 20px;
+    display: none;
+  }
+}
+
