@@ -102,13 +102,30 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>August 2018 - NOW</h4>
+                                <h4>August 2018 - January 2024</h4>
                                 <h4 class="subheading">Bluebird Day</h4>
                                 <h5 class="subheading">Senior Backend Developer</h5>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">
                                     Fighting all bugs, creating custom solutions and providing excellent customer service.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ asset('img/logos/emico.jpeg') }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>February 2024 - NOW</h4>
+                                <h4 class="subheading">Emico</h4>
+                                <h5 class="subheading">Medior Backend Developer</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Being an endboss in Magento 2.
                                 </p>
                             </div>
                         </div>

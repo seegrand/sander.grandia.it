@@ -30,14 +30,10 @@ $age = $d2->diff($d1)->y;
                     He assisted with developing and testing new innovative set-ups to improve the collaboration at the Dutch administration of justice.
                 </p>
                 <p>
-                    Now, he's working as a 🧩 senior PHP Backend Developer at Bluebird Day. He fights all bugs found in e-commerce platforms like Magento 2, Shopware 6 and Drupal 10, and implements new custom features.
-                    Also, he specializes in integration platforms which connect platforms, like SAP, Pimcore and others, to the e-commerce solution.
+                    Now, he's working as a 🧩 medior PHP Backend Developer at Emico. Dedicated to building better e-commerce experiences using Magento 2.
                 </p>
                 <p>
-                    As the team-lead, helping 🤝 others developing themselves is what brings him joy.
-                </p>
-                <p>
-                    His other interests are 🚵 mountain biking through the mud, 🎸 playing guitar, 🏔 Scandinavia's nature and 🇯🇵🚗 JDM cars.
+                    His other interests are 🚵 mountain biking through the mud, 🎸 playing guitar, 🏔 Scandinavia's nature, 🚐 camping and 🇯🇵🚗 JDM cars.
                 </p>
             </div>
         </div>
