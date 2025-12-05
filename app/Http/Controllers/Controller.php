@@ -15,8 +15,6 @@ class Controller extends BaseController
     }
 
     public function contactFile() {
-        $contactFile = public_path() . '/../../../httpd.www/sander/file/sander-grandia.vcf';
-
-        return response()->download(realpath($contactFile));
+        return response()->download('/customers/b/8/3/grandia.it/httpd.www/sander/file/sander-grandia.vcf');
     }
 }
